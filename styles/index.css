@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.left-panel {
+    background-image: url('../assets/contract.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.left-panel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(47, 0, 80, 0.6);
+    z-index: 1;
+}
+
+.text-overlay {
+    z-index: 2;
+    position: relative;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
