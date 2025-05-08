@@ -1,0 +1,45 @@
+body {
+    background-color: #2c2d73;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.form-container {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+.form-label.required::after {
+    content: ' *';
+    color: red;
+}
+
+.form-check-label {
+    font-weight: normal;
+}
+
+.btn-upload {
+    background-color: #f2f2f2;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+.btn-submit {
+    background-color: #00e5ff;
+    border: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 6px;
+}
+
+.form-check {
+    margin-bottom: 20px;
+}

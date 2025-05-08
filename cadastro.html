@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - LetsSign</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/cadastro.css" />
+</head>
+<body>
+    <div class="form-container">
+        <h3 class="text-center mb-4">Crie seu cadastro</h3>
+        <form action="sucesso.html" method="POST">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label required">Nome Completo:</label>
+                        <input type="text" class="form-control" placeholder="Ex: Maria Silva" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label required">CPF:</label>
+                        <input type="text" class="form-control" placeholder="Ex: 123.456.789-00" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label required">Email:</label>
+                        <input type="email" class="form-control" placeholder="Ex: Mariasilva@gmail.com" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Telefone:</label>
+                        <input type="text" class="form-control" placeholder="Ex: 11 99900-4040">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Documento de Identidade</label><br>
+                        <input type="file" class="btn-upload">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label required">Crie uma senha:</label>
+                        <input type="password" class="form-control" placeholder="Ex: 123456" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label required">Confirmar senha:</label>
+                        <input type="password" class="form-control" placeholder="Ex: 123456" required>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="termos" required>
+                        <label class="form-check-label" for="termos">
+                            Declaro que li e aceito os Termos de Uso e Política de Privacidade.
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-submit">Confirmar cadastro</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
