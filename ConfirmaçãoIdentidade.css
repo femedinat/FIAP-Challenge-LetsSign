@@ -1,0 +1,222 @@
+ /* Resetando margens, padding e garantindo box-sizing correto para todos os elementos */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Estilo do corpo da página */
+    body {
+      background-color: #f5f5f5; /* Cor de fundo */
+      font-family: 'Segoe UI', sans-serif; /* Fonte da página */
+      position: relative; /* Posição relativa para uso de posicionamento absoluto */
+      overflow-x: hidden; /* Impede que a página tenha rolagem horizontal */
+      min-height: 100%; /* Garante que o corpo ocupe 100% da altura da tela */
+      display: flex; /* Flexbox para layout */
+      flex-direction: column; /* Coloca os elementos em coluna */
+    }
+
+    /* Estilo do cabeçalho (topbar) */
+    .topbar {
+      width: 100%; /* Ocupa toda a largura da tela */
+      background-color: #bddeed; /* Cor de fundo */
+      padding: 15px 60px; /* Espaçamento interno */
+      display: flex; /* Flexbox para layout */
+      justify-content: space-between; /* Alinha os itens nas extremidades */
+      align-items: center; /* Alinha os itens verticalmente ao centro */
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1); /* Sombra para o cabeçalho */
+    }
+
+    /* Estilo do logo */
+    .logo {
+      font-size: 28px; /* Tamanho da fonte */
+      font-weight: bold; /* Peso da fonte */
+    }
+
+    /* Cor especial para parte do logo */
+    .logo span {
+      color: #00bfff;
+    }
+
+    /* Estilo para os links de navegação no cabeçalho */
+    .nav-links a {
+      margin: 100px;
+      margin-left: 10px; /* Espaçamento entre os links */
+      color: black; /* Cor do texto */
+      font-weight: 500; /* Peso da fonte */
+      text-decoration: none; /* Remove sublinhado */
+    }
+
+    /* Estilo do conteúdo principal da página */
+    .main {
+      position: relative;
+      padding: 60px 60px; /* Espaçamento interno */
+      flex: 1; /* Faz com que ocupe o restante do espaço */
+    }
+
+    .title, .description, .option, .icons{
+        margin-left: 250px;
+    }
+    /* Título principal */
+    .title {
+      color: #6a1b9a; /* Cor do título */
+      font-weight: 600; /* Peso da fonte */
+      font-size: 20px; /* Tamanho da fonte */
+      margin-bottom: 15px; /* Margem inferior */
+    }
+
+    /* Descrição do conteúdo */
+    .description {
+      color: #080808;
+      max-width: 420px; /* Largura máxima */
+      font-size: 14px; /* Tamanho da fonte */
+      margin-bottom: 30px; /* Margem inferior */
+    }
+
+    /* Estilo para os ícones posicionados à direita */
+    .icons {
+      position: absolute;
+      top: 100px; /* Distância do topo */
+      left: 50%; /* Distância da direita */
+      display: flex;
+      transform: translateX(-50%);
+      width: 150px;
+      height: 150;
+      /* flex-direction: column; Coloca os ícones em coluna */
+      /* gap: 20px; Espaçamento entre os ícones */
+    }
+
+    /* Tamanho dos ícones */
+    .icons img {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+    }
+
+    
+    .icons img:first-child {
+      left: -20px; /* desloca a imagem de e-mail um pouco para a esquerda */
+      z-index: 2;
+    }
+
+    .icons img:last-child {
+     left: 100px; /* desloca a imagem de biometria um pouco para a direita */
+     top: 70px;
+     z-index: 1;
+    }
+
+    /* Estilo para as opções de token e biometria */
+    .option {
+      margin-bottom: 30px; /* Margem inferior */
+    }
+
+    .option label {
+      font-weight: 600; /* Peso da fonte */
+      margin-bottom: 8px; /* Margem inferior */
+      display: inline-block; /* Exibe o label como bloco */
+    }
+
+    /* Estilo do campo de entrada de token */
+    .input-token {
+      background-color: #dcdcdc; /* Cor de fundo */
+      border: none; /* Sem borda */
+      padding: 10px; /* Espaçamento interno */
+      border-radius: 6px; /* Cantos arredondados */
+      width: 350px; /* Largura do campo */
+      font-size: 14px; /* Tamanho da fonte */
+    }
+
+    /* Estilo do link de reenviar código */
+    .reenviar {
+      background-color: #00d1e0;
+      border-radius: 6px;
+      margin-top: 6px; /* Margem superior */
+      color: #000000; /* Cor do texto */
+      font-size: 13px; /* Tamanho da fonte */
+      text-align: center;
+      padding: 5px;
+      cursor: pointer; /* Cursor de ponteiro para indicar interatividade */
+      flex-direction: column;
+      width: 15%;
+      font-weight: 600; /* Peso da fonte */
+      text-decoration: underline; /* Sublinha o texto */
+    }
+
+    /* Estilo do botão de biometria */
+    .biometria-btn {
+      background-color: #00d1e0; /* Cor de fundo */
+      color: rgb(0, 0, 0); /* Cor do texto */
+      font-weight: 600; /* Peso da fonte */
+      border: none; /* Sem borda */
+      padding: 10px 30px; /* Espaçamento interno */
+      border-radius: 6px; /* Cantos arredondados */
+      font-size: 15px; /* Tamanho da fonte */
+    }
+
+    /* Estilo para a navegação de paginação */
+    .pagination {
+      display: flex;
+      align-items: center;
+      gap: 20px; /* Espaçamento entre os itens */
+      position: absolute;
+      bottom: 50px; /* Distância da parte inferior */
+      left: 50%; /* Centraliza horizontalmente */
+      transform: translateX(-50%); /* Ajusta a posição para centralizar */
+      top: 500px;
+      font-weight: bold; /* Peso da fonte */
+    }
+
+    /* Estilo para as setas da navegação */
+    .arrow {
+      font-size: 22px; /* Tamanho da fonte */
+      cursor: pointer; /* Cursor de ponteiro */
+    }
+
+/* Estilo dos cantos decorativos - Direita */
+.corner-right {
+  position: absolute;
+  right: 0;
+  width: 250px;
+  z-index: -1;
+}
+
+.img-1 {
+  position: absolute;
+  bottom: 30px;
+  z-index: 3;
+}
+
+.img-2 {
+  position: absolute;
+  bottom: -36px;
+  z-index: 1;
+}
+
+.img-3 {
+  position: absolute;
+  bottom: -30px;
+  z-index: 2;
+}
+
+/* Estilo dos cantos decorativos - Esquerda */
+.corner-left {
+  position: absolute;
+  left: 0;
+  width: 250px;
+  z-index: -2; 
+}
+
+.imgleft-1 {
+  position: absolute;
+  bottom: -20px;
+}
+
+.imgleft-2 {
+  position: absolute;
+  bottom: -20px;
+}
+
+.imgleft-3 {
+  position: absolute;
+  bottom: 0px;
+}
