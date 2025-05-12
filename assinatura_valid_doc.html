@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Assinatura e Validação</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="styles/assinatura_valid_doc.css" rel="stylesheet"/>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
+    <a class="navbar-brand fw-bold text-primary" href="#">LetsSign ✓</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Recursos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contatos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <h5 class="text-muted">ASSINATURA E VALIDAÇÃO DE DOCUMENTOS</h5>
+    <h2 class="fw-bold mb-4">Assinatura e Validação de Documentos</h2>
+    
+    <div class="row">
+      <div class="col-md-6">
+        <button class="btn btn-info mb-2 px-4">Escolher arquivo</button>
+        <p class="small text-muted">Ou arraste e solte o arquivo aqui<br><strong>Upload concluído !!</strong></p>
+
+        <button class="btn btn-info mb-2 px-4">Gerar hash</button>
+        <p class="small text-muted">Hash gerado com sucesso ...</p>
+
+        <button class="btn btn-secondary btn-sm mb-4">Copiar Hash <i class="bi bi-clipboard"></i></button>
+
+        <div class="mb-3">
+          <label class="form-label fw-medium">Insira a chave pública:</label>
+          <input type="text" class="form-control rounded-pill" disabled>
+        </div>
+
+        <button class="btn btn-primary mb-3 px-4">Validar documento</button>
+        <p><strong>Status:</strong> <span class="text-success">Documento válido !</span></p>
+      </div>
+
+      <div class="col-md-6">
+        <div class="border-dashed p-3 mb-3">
+          <div class="row">
+            <div class="col-6">
+              <p><strong>Chave Pública:</strong><br>ABCD1234</p>
+              <button class="btn btn-light btn-sm mb-1">Copiar <i class="bi bi-clipboard"></i></button><br>
+              <button class="btn btn-light btn-sm">Baixar chave <i class="bi bi-download"></i></button>
+            </div>
+            <div class="col-6 border-start">
+              <p><strong>Chave Privada:</strong><br>....................</p>
+              <button class="btn btn-light btn-sm mb-1">Usar biometria <i class="bi bi-fingerprint"></i></button><br>
+              <button class="btn btn-light btn-sm">Receber código</button>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-purple w-100 mb-4">Assinar documento</button>
+
+        <div class="bg-light border p-3 rounded small text-center">
+          <p><strong>Detalhes:</strong><br>
+            Hash gerado<br>
+            Data: 02/12/2024<br>
+            Hora: 21:28<br>
+            Documento válido.
+          </p>
+        </div>
+
+        <button class="btn btn-info w-100 mt-2">Baixar documento <i class="bi bi-download"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
