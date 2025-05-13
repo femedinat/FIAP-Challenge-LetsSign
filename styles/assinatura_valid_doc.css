@@ -1,0 +1,23 @@
+/* Estilo da borda tracejada para o bloco de chaves */
+.border-dashed {
+    border: 2px dashed #a96ffc;
+    border-radius: 12px;
+    background-color: #fafafa;
+  }
+  
+  /* Botão roxo customizado */
+  .btn-purple {
+    background-color: #a85efc;
+    color: white;
+    border: none;
+  }
+  
+  .btn-purple:hover {
+    background-color: #9446e0;
+  }
+  
+  /* Pequenas melhorias */
+  input.form-control[disabled] {
+    background-color: #e9ecef;
+  }
+  
