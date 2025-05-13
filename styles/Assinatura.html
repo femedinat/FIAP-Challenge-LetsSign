@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assinatura Digital</title>
+  <link rel="stylesheet" href="./assets/styles/Assinatura.css">
+</head>
+
+<body>
+
+   <div class="topbar">
+        <div class="logo">LetsSign<span>✔</span></div> <!-- Logo do sistema -->
+        <div class="nav-links">
+          <!-- Links de navegação -->
+          <a href="#">Home</a>
+          <a href="#">Blog</a>
+          <a href="#">Recursos</a>
+          <a href="#">Contatos</a>
+        </div>
+    </div>
+<!-- conteúdo principal -->
+    <div class="container-assinatura">
+        <h1>Assinatura Digital</h1>
+        <p class="subtitulo">Complete o formulário para criar sua assinatura digital de forma segura.</p>
+
+    <form>
+        <div class="form-grid">
+            <div>
+                <label for="chave">Chave Privada:</label>
+                <input type="password" id="chave" name="chave">
+
+        <fieldset>
+            <legend>Escolha o estilo da fonte:</legend>
+            <label><input type="radio" name="fonte" value="cursiva"> Cursiva <span class="exemplo">Ex: Corinthia, Astral Sisters e Hello Almeida</span></label><br>
+            <label><input type="radio" name="fonte" value="serifada"> Serifada <span class="exemplo">Ex: Times New Roman, Courier e Georgia</span></label><br>
+            <label><input type="radio" name="fonte" value="sem-serifada"> Sem serifada <span class="exemplo">Ex: Arial, Verdana, Helvetica e Avenir</span></label><br>
+            <label><input type="radio" name="fonte" value="escrita"> Escrita (manualmente)</label>
+        </fieldset>
+        </div>
+
+        <div>
+            <label for="assinatura">Desenhe sua assinatura: <button type="button" id="limpar">Limpar assinatura</button></label>
+            <canvas id="assinatura" width="300" height="120"></canvas>
+
+            <label for="arquivo">Envie o contrato assinado:</label>
+            <input type="file" id="arquivo" name="arquivo">
+        </div>
+    </div>
+
+    <div class="botoes">
+        <button type="button" class="btn-cancelar">Cancelar</button>
+        <button type="submit" class="btn-salvar">Salvar assinatura</button>
+    </div>
+    </form>
+    </div>
+
+</body>
+</html>
