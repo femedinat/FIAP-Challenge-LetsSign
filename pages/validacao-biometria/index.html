@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LetsSign - Geração de Chave Pública</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome para ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <link href="/GeraçãoChavePublica.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <div class="topbar">
+      <div class="logo">LetsSign<span>✔</span></div>
+      <!-- Logo do sistema -->
+      <div class="nav-links">
+        <!-- Links de navegação -->
+        <a href="#">Home</a>
+        <a href="#">Blog</a>
+        <a href="#">Recursos</a>
+        <a href="#">Contatos</a>
+      </div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+      <div class="container">
+        <div class="row justify-content-center hero">
+          <div class="col">
+            <h1 class="title">Reconhecimento Facial</h1>
+            <h3 class="subtitle">
+              Por favor, posicione seu rosto na câmera para que possamos
+              verificar sua identidade. Certifique de está em um ambiente bem
+              iluminado.
+            </h3>
+            <button class="btn" type="button">Iniciar validação</button>
+          </div>
+          <div class="col text-center">
+            <img src="/assets/face2.png" width="200" alt="facial" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="">
+            <img
+              src="../../assets/Mask group 3 direita.png"
+              class="corner-right img-1"
+              alt="decoração direita"
+            />
+            <img
+              src="../../assets/Mask group 1 direita.png"
+              class="corner-right img-2"
+              alt="decoração direita"
+            />
+            <img
+              src="../../assets/Mask group 2 direita.png"
+              class="corner-right img-3"
+              alt="decoração direita"
+            />
+
+            <!-- Imagens decorativas nos cantos -->
+            <img
+              src="../../assets/Mask group 1 esquerda.png"
+              class="corner-left imgleft-1"
+              alt="decoração esquerda"
+            />
+        
+            <img
+              src="../../assets/Mask group 2 esquerda.png"
+              class="corner-left imgleft-2"
+              alt="decoração esquerda"
+            />
+            <img
+              src="../../assets/Mask group 3 esquerda.png"
+              class="corner-left imgfelt-3"
+              alt="decoração esquerda"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Elementos DOM
+        const generateKeyBtn = document.getElementById("generateKeyBtn");
+        const keyGeneratedSection = document.getElementById(
+          "keyGeneratedSection"
+        );
+        const keysLinkedSection = document.getElementById("keysLinkedSection");
+        const publicKeyDisplay = document.getElementById("publicKeyDisplay");
+        const finishBtn = document.getElementById("finishBtn");
+        const backBtn = document.getElementById("backBtn");
+
+        // Gerar chave pública
+        generateKeyBtn.addEventListener("click", function () {
+          // Simular geração de chave (em uma aplicação real, isso seria feito por um algoritmo de criptografia)
+          const publicKey = generateRandomKey();
+          publicKeyDisplay.textContent = publicKey;
+
+          // Mostrar seção de chave gerada
+          keyGeneratedSection.style.display = "block";
+
+          // Simular atrelagem de chaves após 1.5 segundos
+          setTimeout(function () {
+            keysLinkedSection.style.display = "block";
+            finishBtn.disabled = false;
+          }, 1500);
+        });
+
+        // Função para gerar uma chave aleatória (simulação)
+        function generateRandomKey() {
+          const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+          let result = "";
+          for (let i = 0; i < 10; i++) {
+            if (i === 3 || i === 6) {
+              result += " ";
+            } else {
+              result += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+          }
+          return result.trim().replace(/ /g, "");
+        }
+
+        // Botão Voltar
+        backBtn.addEventListener("click", function () {
+          alert("Voltando para a tela anterior...");
+          // Em uma aplicação real, isso redirecionaria ou mudaria o estado da interface
+        });
+
+        // Botão Finalizar
+        finishBtn.addEventListener("click", function () {
+          alert("Processo finalizado com sucesso!");
+          // Em uma aplicação real, isso enviaria os dados ou avançaria para o próximo passo
+        });
+      });
+    </script>
+  </body>
+</html>
