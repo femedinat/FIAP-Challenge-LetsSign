@@ -1,0 +1,95 @@
+html {
+  height: 100vh;
+}
+
+.imgleft-2 {
+  position: fixed;
+  bottom: 10px;
+}
+
+.imgleft-1 {
+  position: fixed;
+  bottom: 0px;
+}
+
+.imgfelt-3 {
+  position: fixed;
+  bottom: 0px;
+}
+
+.img-1 {
+  position: fixed;
+  bottom: 110px;
+}
+
+.img-2 {
+  position: fixed;
+  bottom: 0px;
+}
+
+.img-3 {
+  position: fixed;
+  bottom: 35px;
+}
+
+.main-content {
+  margin-top: 5em;
+}
+
+.title-group {
+  text-align: center;
+
+  & .title {
+    font-weight: 200;
+  }
+
+  & .subtitle {
+    color: #802BFF;
+  } 
+
+  & p {
+    font-size: 1.3em;
+    text-align: start;
+    font-weight: bold;
+  }
+
+  & .dashed {
+    position: absolute;
+    width: 329px;
+    height: 246px;
+    left: 131px;
+    top: 410px;
+    
+    border: 3px dashed #802BFF;
+    border-radius: 20px;
+  }
+
+  & ul {
+    font-weight: 300;
+    text-align: start;
+    font-size: 1.4em;
+  }
+
+  & img {
+    position: absolute;
+    right: 440px;
+    height: 220px;
+    top: 360px
+  }
+}
+
+.btn {
+  margin-top: 2em;
+  position: absolute;
+  top: 380px;
+  right: 200px;
+  margin-bottom: 2em;
+  background: #09EEFE;
+  border-radius: 10px;
+  transition: background 0.2s;
+
+  &:hover {
+    background: #06c2d6;
+    cursor: pointer;
+  }
+}
