@@ -1,0 +1,164 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.topbar {
+            width: 100%;
+            background-color: #bddeed;
+            padding: 15px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+      font-size: 28px; /* Tamanho da fonte */
+      font-weight: bold; /* Peso da fonte */
+    }
+
+    /* Cor especial para parte do logo */
+.logo span {
+    color: #00bfff;
+    }
+
+    /* Estilo para os links de navegação no cabeçalho */
+.nav-links a {
+    margin: 100px;
+    margin-left: 10px; /* Espaçamento entre os links */
+    color: black; /* Cor do texto */
+    font-weight: 500; /* Peso da fonte */
+    text-decoration: none; /* Remove sublinhado */
+    }
+
+.container-assinatura {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    text-align: left;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #eee;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+input[type="radio"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #999;
+    border-radius: 3px;
+    margin-right: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked {
+    background-color: #999;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.exemplo {
+    font-size: 0.8em;
+    color: #555;
+    margin-left: 8px;
+}
+
+canvas {
+    display: block;
+    background-color: #eee;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: crosshair;
+}
+
+#limpar {
+    background: none;
+    border: none;
+    color: #333;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 0.9em;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.btn-cancelar {
+    background-color: #802bff;
+    color: white;
+    border: none;
+    padding: 12px 32px;
+    font-size: 1em;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.btn-salvar {
+    background-color: #00bfff;
+    color: black;
+    border: none;
+    padding: 12px 32px;
+    font-size: 1em;
+    border-radius: 12px;
+    cursor: pointer;
+}
