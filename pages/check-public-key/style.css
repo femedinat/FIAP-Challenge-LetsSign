@@ -1,0 +1,152 @@
+body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    .topbar {
+      background-color: #e6f1fc;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    .logo span {
+      color: #7c3aed;
+    }
+
+    .nav-links a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+    }
+
+    .key-container {
+      padding: 60px 15px;
+      text-align: center;
+    }
+
+    .key-box {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 20px 20px 40px;
+      border: 1px solid #ccc;
+      max-width: 650px;
+      margin: 0 auto;
+      position: relative;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .key-box textarea {
+      width: 100%;
+      height: 100px;
+      border: none;
+      resize: none;
+      font-family: monospace;
+      background-color: transparent;
+      outline: none;
+      padding-right: 60px;
+      color: #000;
+    }
+
+    .key-actions {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .key-actions i {
+      font-size: 18px;
+      color: #7c3aed;
+      cursor: pointer;
+    }
+
+    .pagination-step {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 40px;
+    }
+
+    .img-left, .img-right {
+      position: absolute;
+      bottom: 0;
+      width: 120px;
+    }
+
+    .img-left {
+      left: 0;
+    }
+
+    .img-right {
+      right: 0;
+    }
+
+    /* Estilo dos cantos decorativos - Direita */
+        .corner-right {
+          position: absolute;
+          right: 0;
+          width: 250px;
+          z-index: -1;
+        }
+
+        .img-1 {
+          position: absolute;
+          bottom: 0px;
+          z-index: 3;
+        }
+
+        .img-2 {
+          position: absolute;
+          bottom: -100px;
+          z-index: 1;
+        }
+
+        .img-3 {
+          position: absolute;
+          bottom: -80px;
+          z-index: 2;
+        }
+
+        /* Estilo dos cantos decorativos - Esquerda */
+        .corner-left {
+          position: absolute;
+          left: 0;
+          width: 250px;
+          z-index: -2; 
+        }
+
+        .imgleft-1 {
+          position: absolute;
+          bottom: -40px;
+        }
+
+        .imgleft-2 {
+          position: absolute;
+          bottom: -60px;
+        }
+
+        .imgleft-3 {
+          position: absolute;
+          bottom: 0px;
+        }
+
+    @media (max-width: 576px) {
+      .key-box textarea {
+        font-size: 14px;
+      }
+
+      .img-left, .img-right {
+        width: 80px;
+      }
+    }

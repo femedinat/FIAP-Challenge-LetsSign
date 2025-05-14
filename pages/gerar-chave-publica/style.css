@@ -1,0 +1,158 @@
+      
+        body {
+            background-color: #f5f5f5; /* Cor de fundo */
+            font-family: 'Segoe UI', sans-serif; /* Fonte da página */
+            position: relative; /* Posição relativa para uso de posicionamento absoluto */
+            overflow-x: hidden; /* Impede que a página tenha rolagem horizontal */
+            min-height: 100%; /* Garante que o corpo ocupe 100% da altura da tela */
+            display: flex; /* Flexbox para layout */
+            flex-direction: column; /* Coloca os elementos em coluna */
+        }
+        
+        /* Estilo do cabeçalho (topbar) */
+        .topbar {
+            width: 100%;
+            background-color: #bddeed;
+            padding: 15px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Estilo do logo */
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* Cor especial para parte do logo */
+        .logo span {
+            color: #00bfff;
+        }
+
+        /* Estilo para os links de navegação no cabeçalho */
+        .nav-links a {
+            margin: 100px;
+            margin-left: 10px;
+            color: black;
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        /* Efeito hover nos links */
+        .nav-links a:hover {
+            background-color:#52bdd3 ;
+            border-radius: 10px;
+        }
+       
+        .card {
+            border: none;
+            border-radius: 0.35rem;
+            box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.1);
+            margin-top: 2rem;
+        }
+        
+        .card-body {
+            padding: 2rem;
+        }
+        
+        .card-title {
+            color: #8118b6;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        
+        .info-box {
+            background-color: #f8f9fc;
+            /* border-left: 0.25rem solid var(--primary-color); */
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .generated-key {
+            background-color: #eaebef;
+            padding: 1.5rem;
+            text-align: center;
+            margin: 1.5rem 0;
+            border-radius: 0.35rem;
+        }
+        
+        .btn-primary {
+            background-color: #00bfff;
+            border: none;
+        }
+        
+        .btn-outline-secondary {
+            color: #ffffff;
+            background-color: #8118b6;
+            border-color: #d1d3e2;
+        }
+        
+        .btn {
+            padding: 0.5rem 1.5rem;
+            font-weight: 600;
+        }
+        
+        .success-message {
+            color: #1cc88a;
+            font-weight: 600;
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+        
+        .action-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+
+        /* Estilo dos cantos decorativos - Direita */
+        .corner-right {
+          position: absolute;
+          right: 0;
+          width: 250px;
+          z-index: -1;
+        }
+
+        .img-1 {
+          position: absolute;
+          bottom: 0px;
+          z-index: 3;
+        }
+
+        .img-2 {
+          position: absolute;
+          bottom: -100px;
+          z-index: 1;
+        }
+
+        .img-3 {
+          position: absolute;
+          bottom: -80px;
+          z-index: 2;
+        }
+
+        /* Estilo dos cantos decorativos - Esquerda */
+        .corner-left {
+          position: absolute;
+          left: 0;
+          width: 250px;
+          z-index: -2; 
+        }
+
+        .imgleft-1 {
+          position: absolute;
+          bottom: -40px;
+        }
+
+        .imgleft-2 {
+          position: absolute;
+          bottom: -60px;
+        }
+
+        .imgleft-3 {
+          position: absolute;
+          bottom: 0px;
+        }
